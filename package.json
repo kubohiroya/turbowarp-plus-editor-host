@@ -1,0 +1,33 @@
+{
+  "name": "@kubohiroya/turbowarp-plus-editor-host",
+  "version": "0.1.0",
+  "description": "The editor host contract that TurboWarp Plus Editor family packages are written against, with a check that a host keeps to it",
+  "type": "module",
+  "license": "MPL-2.0",
+  "author": "Hiroya Kubo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubohiroya/turbowarp-plus-editor-host.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "README.ja.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}
