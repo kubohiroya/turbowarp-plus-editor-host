@@ -1,6 +1,6 @@
 {
   "name": "@kubohiroya/turbowarp-plus-editor-host",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The editor host contract that TurboWarp Plus Editor family packages are written against, with a check that a host keeps to it",
   "type": "module",
   "license": "MPL-2.0",
